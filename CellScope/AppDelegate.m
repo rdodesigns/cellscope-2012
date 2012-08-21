@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "Users.h"
+#import "LoginViewController.h"
 
 @implementation AppDelegate
 
@@ -16,10 +18,31 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
+    // Get a reference to the stardard user defaults
+    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+    
+    LoginViewController *rootView = (LoginViewController *)self.window.rootViewController;
+    rootView.managedObjectContext = self.managedObjectContext;
+    
+    // Check if the app has run before by checking a key in user defaults
+    if ([prefs boolForKey:@"hasRunBefore"] != YES)
+    {
+        // Set flag so we know not to run this next time
+        [prefs setBool:YES forKey:@"hasRunBefore"];
+        [prefs synchronize];
+        
+        // Add our default user object in Core Data
+        Users *user = (Users*)[NSEntityDescription insertNewObjectForEntityForName:@"Users" inManagedObjectContext:self.managedObjectContext];
+        
+        [user setUsername:@"admin"];
+        [user setPassword:@"default"];
+        
+        // Commit to core data
+        NSError *error;
+        if (![self.managedObjectContext save:&error])
+            NSLog(@"Failed to add default user with error: %@", [error domain]);
+            
+    }
     return YES;
 }
 
