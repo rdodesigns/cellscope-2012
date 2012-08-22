@@ -33,8 +33,8 @@
 		9B63821815E4710000456187 /* NIToolbarPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B63821415E4710000456187 /* NIToolbarPhotoViewController.m */; };
 		9B63822315E4712300456187 /* NIPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B63821D15E4712300456187 /* NIPageView.m */; };
 		9B63822415E4712300456187 /* NIPagingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B63821F15E4712300456187 /* NIPagingScrollView.m */; };
-		9B63822615E471A800456187 /* NimbusPhotos.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9B63822515E471A800456187 /* NimbusPhotos.bundle */; };
 		9B63822915E4735500456187 /* PhotoViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B63822815E4735500456187 /* PhotoViewDataSource.m */; };
+		9B63822B15E478BC00456187 /* NimbusPhotos.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9B63822A15E478BC00456187 /* NimbusPhotos.bundle */; };
 		9B6BF0B915E19ACD002834C5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B6BF0B815E19ACD002834C5 /* UIKit.framework */; };
 		9B6BF0BB15E19ACD002834C5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B6BF0BA15E19ACD002834C5 /* Foundation.framework */; };
 		9B6BF0BD15E19ACD002834C5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B6BF0BC15E19ACD002834C5 /* CoreGraphics.framework */; };
@@ -148,9 +148,9 @@
 		9B63822015E4712300456187 /* NIPagingScrollViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NIPagingScrollViewDataSource.h; path = ../nimbus/src/pagingscrollview/src/NIPagingScrollViewDataSource.h; sourceTree = "<group>"; };
 		9B63822115E4712300456187 /* NIPagingScrollViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NIPagingScrollViewDelegate.h; path = ../nimbus/src/pagingscrollview/src/NIPagingScrollViewDelegate.h; sourceTree = "<group>"; };
 		9B63822215E4712300456187 /* NIPagingScrollViewPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NIPagingScrollViewPage.h; path = ../nimbus/src/pagingscrollview/src/NIPagingScrollViewPage.h; sourceTree = "<group>"; };
-		9B63822515E471A800456187 /* NimbusPhotos.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = NimbusPhotos.bundle; path = ../nimbus/src/photos/resources/NimbusPhotos.bundle; sourceTree = "<group>"; };
 		9B63822715E4735500456187 /* PhotoViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoViewDataSource.h; sourceTree = "<group>"; };
 		9B63822815E4735500456187 /* PhotoViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoViewDataSource.m; sourceTree = "<group>"; };
+		9B63822A15E478BC00456187 /* NimbusPhotos.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = NimbusPhotos.bundle; path = ../nimbus/src/photos/resources/NimbusPhotos.bundle; sourceTree = "<group>"; };
 		9B6BF0B415E19ACD002834C5 /* CellScope.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CellScope.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B6BF0B815E19ACD002834C5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9B6BF0BA15E19ACD002834C5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -295,7 +295,7 @@
 		9B63818A15E470A300456187 /* Photos */ = {
 			isa = PBXGroup;
 			children = (
-				9B63822515E471A800456187 /* NimbusPhotos.bundle */,
+				9B63822A15E478BC00456187 /* NimbusPhotos.bundle */,
 				9B63820715E4710000456187 /* NimbusPhotos.h */,
 				9B63820815E4710000456187 /* NimbusPhotos+Namespace.h */,
 				9B63820915E4710000456187 /* NIPhotoAlbumScrollView.h */,
@@ -545,7 +545,7 @@
 				9B6BF0FF15E19D2E002834C5 /* CellScopePadStoryboard.storyboard in Resources */,
 				9B9109AA15E1F3D00067BB8D /* cellscope_logo_1600-bkgd.png in Resources */,
 				9B9109AF15E1F53E0067BB8D /* login_texfield_bg.png in Resources */,
-				9B63822615E471A800456187 /* NimbusPhotos.bundle in Resources */,
+				9B63822B15E478BC00456187 /* NimbusPhotos.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
