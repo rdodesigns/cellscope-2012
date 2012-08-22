@@ -34,7 +34,6 @@
 		9B63822315E4712300456187 /* NIPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B63821D15E4712300456187 /* NIPageView.m */; };
 		9B63822415E4712300456187 /* NIPagingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B63821F15E4712300456187 /* NIPagingScrollView.m */; };
 		9B63822915E4735500456187 /* PhotoViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B63822815E4735500456187 /* PhotoViewDataSource.m */; };
-		9B63822B15E478BC00456187 /* NimbusPhotos.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9B63822A15E478BC00456187 /* NimbusPhotos.bundle */; };
 		9B6BF0B915E19ACD002834C5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B6BF0B815E19ACD002834C5 /* UIKit.framework */; };
 		9B6BF0BB15E19ACD002834C5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B6BF0BA15E19ACD002834C5 /* Foundation.framework */; };
 		9B6BF0BD15E19ACD002834C5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B6BF0BC15E19ACD002834C5 /* CoreGraphics.framework */; };
