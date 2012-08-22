@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9B13455615E28E14009863DF /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B13455515E28E14009863DF /* ImageIO.framework */; };
+		9B5AF03A15E4795F008A8003 /* NimbusPhotos.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9B5AF03915E4795F008A8003 /* NimbusPhotos.bundle */; };
 		9B6381F415E470EB00456187 /* NICommonMetrics.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6381CA15E470EB00456187 /* NICommonMetrics.m */; };
 		9B6381F515E470EB00456187 /* NIDataStructures.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6381CC15E470EB00456187 /* NIDataStructures.m */; };
 		9B6381F615E470EB00456187 /* NIDebuggingTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6381CE15E470EB00456187 /* NIDebuggingTools.m */; };
@@ -81,6 +82,7 @@
 
 /* Begin PBXFileReference section */
 		9B13455515E28E14009863DF /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		9B5AF03915E4795F008A8003 /* NimbusPhotos.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = NimbusPhotos.bundle; path = ../nimbus/src/photos/resources/NimbusPhotos.bundle; sourceTree = "<group>"; };
 		9B6381C915E470EB00456187 /* NICommonMetrics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NICommonMetrics.h; path = ../nimbus/src/core/src/NICommonMetrics.h; sourceTree = "<group>"; };
 		9B6381CA15E470EB00456187 /* NICommonMetrics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NICommonMetrics.m; path = ../nimbus/src/core/src/NICommonMetrics.m; sourceTree = "<group>"; };
 		9B6381CB15E470EB00456187 /* NIDataStructures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NIDataStructures.h; path = ../nimbus/src/core/src/NIDataStructures.h; sourceTree = "<group>"; };
@@ -293,6 +295,7 @@
 		9B63818A15E470A300456187 /* Photos */ = {
 			isa = PBXGroup;
 			children = (
+				9B5AF03915E4795F008A8003 /* NimbusPhotos.bundle */,
 				9B63820715E4710000456187 /* NimbusPhotos.h */,
 				9B63820815E4710000456187 /* NimbusPhotos+Namespace.h */,
 				9B63820915E4710000456187 /* NIPhotoAlbumScrollView.h */,
@@ -542,6 +545,7 @@
 				9B6BF0FF15E19D2E002834C5 /* CellScopePadStoryboard.storyboard in Resources */,
 				9B9109AA15E1F3D00067BB8D /* cellscope_logo_1600-bkgd.png in Resources */,
 				9B9109AF15E1F53E0067BB8D /* login_texfield_bg.png in Resources */,
+				9B5AF03A15E4795F008A8003 /* NimbusPhotos.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
