@@ -6,11 +6,11 @@
 //  Copyright (c) 2012 Matthew Bakalar. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import "CSAppDelegate.h"
 #import "Users.h"
 #import "LoginViewController.h"
 
-@implementation AppDelegate
+@implementation CSAppDelegate
 
 @synthesize managedObjectContext = _managedObjectContext;
 @synthesize managedObjectModel = _managedObjectModel;
