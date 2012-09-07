@@ -7,7 +7,7 @@
 //
 
 #import "PictureListMainTable.h"
-#import "PictureListDetail.h"
+#import "PhotoViewController.h"
 #import "CoreDataHelper.h"
 #import "Pictures.h"
 #import "CaptureViewController.h"
@@ -58,18 +58,17 @@
         cvc.managedObjectContext = self.managedObjectContext;
     }
     
-    if([segue.identifier isEqualToString:@"EditPicture"]) {
+    if([segue.identifier isEqualToString:@"ViewPicture"]) {
+        NSLog(@"Hello world");
+        
         // Get a reference to our detail view
-        PictureListDetail *pld = (PictureListDetail*)[segue destinationViewController];
+        PhotoViewController *pvc = (PhotoViewController*)[segue destinationViewController];
         
         // Pass the managed object context to the destination view controller
-        pld.managedObjectContext = self.managedObjectContext;
+        pvc.managedObjectContext = self.managedObjectContext;
         
         // Get the row we selected in the table view
         NSInteger selectedIndex = [[self.tableView indexPathForSelectedRow] row];
-        
-        // Pass the picture on to the picture list detail controller
-        pld.currentPicture = [self.pictureListData objectAtIndex:selectedIndex];
     }
 }
 

@@ -10,6 +10,7 @@
 #import "UIImage+Resize.h"
 #import "Pictures.h"
 #import "CSUserContext.h"
+#import <AssetsLibrary/AssetsLibrary.h>
 #import <ImageIO/ImageIO.h>
 
 @interface CaptureViewController ()
@@ -113,15 +114,23 @@
          // Set the last captured image preview thumbnail
          self.lastCaptured.image = thumbnail;
          
+         // Set up a Pictures entry to store in Core Data
+         Pictures* picture = (Pictures *)[NSEntityDescription insertNewObjectForEntityForName:@"Pictures" inManagedObjectContext:self.managedObjectContext];
+         
          // Save the image to the camera roll
          if ([self.userContext.sharing isEqualToString:@"Camera Roll"]) {             
              // Request to save the image to camera roll
-             UIImageWriteToSavedPhotosAlbum(image, self,
-                                            @selector(image:didFinishSavingWithError:contextInfo:), nil);
+             ALAssetsLibrary *library = [[ALAssetsLibrary alloc] init];
+             
+             [library writeImageToSavedPhotosAlbum:image.CGImage orientation:(ALAssetOrientation)[image imageOrientation] completionBlock:^(NSURL *assetURL, NSError *error){
+                 if (error) {
+                     NSLog(@"Error writing image to photo album");
+                 }
+                 else {
+                     picture.path = assetURL.absoluteString;
+                 }
+             }];
          }
-         
-         // If we are adding a new picture then create an entry
-         Pictures* picture = (Pictures *)[NSEntityDescription insertNewObjectForEntityForName:@"Pictures" inManagedObjectContext:self.managedObjectContext];
          
          // Set the picture properties
          picture.title = @"Default";

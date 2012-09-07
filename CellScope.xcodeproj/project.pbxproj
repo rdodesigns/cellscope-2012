@@ -34,7 +34,6 @@
 		9B63821815E4710000456187 /* NIToolbarPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B63821415E4710000456187 /* NIToolbarPhotoViewController.m */; };
 		9B63822315E4712300456187 /* NIPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B63821D15E4712300456187 /* NIPageView.m */; };
 		9B63822415E4712300456187 /* NIPagingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B63821F15E4712300456187 /* NIPagingScrollView.m */; };
-		9B63822915E4735500456187 /* PhotoViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B63822815E4735500456187 /* PhotoViewDataSource.m */; };
 		9B6BF0B915E19ACD002834C5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B6BF0B815E19ACD002834C5 /* UIKit.framework */; };
 		9B6BF0BB15E19ACD002834C5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B6BF0BA15E19ACD002834C5 /* Foundation.framework */; };
 		9B6BF0BD15E19ACD002834C5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B6BF0BC15E19ACD002834C5 /* CoreGraphics.framework */; };
@@ -66,6 +65,8 @@
 		9B9109C415E1FDA90067BB8D /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B9109C315E1FDA90067BB8D /* CoreVideo.framework */; };
 		9B9EEEF015E2D4B200773E9D /* CSUserContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B9EEEEF15E2D4B200773E9D /* CSUserContext.m */; };
 		9B9EEEF615E2DB8900773E9D /* Pictures.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B9EEEF515E2DB8900773E9D /* Pictures.m */; };
+		9BE8B3DE15E52D55009B95F5 /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BE8B3DD15E52D55009B95F5 /* PhotoViewController.m */; };
+		9BE8B3E015E52F29009B95F5 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BE8B3DF15E52F29009B95F5 /* AssetsLibrary.framework */; };
 		9BF8133E15E1AB0700AC9B3F /* PictureListMainTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF8133D15E1AB0700AC9B3F /* PictureListMainTable.m */; };
 		9BF8134215E1B13500AC9B3F /* PictureListDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF8134115E1B13500AC9B3F /* PictureListDetail.m */; };
 /* End PBXBuildFile section */
@@ -149,8 +150,6 @@
 		9B63822015E4712300456187 /* NIPagingScrollViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NIPagingScrollViewDataSource.h; path = ../nimbus/src/pagingscrollview/src/NIPagingScrollViewDataSource.h; sourceTree = "<group>"; };
 		9B63822115E4712300456187 /* NIPagingScrollViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NIPagingScrollViewDelegate.h; path = ../nimbus/src/pagingscrollview/src/NIPagingScrollViewDelegate.h; sourceTree = "<group>"; };
 		9B63822215E4712300456187 /* NIPagingScrollViewPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NIPagingScrollViewPage.h; path = ../nimbus/src/pagingscrollview/src/NIPagingScrollViewPage.h; sourceTree = "<group>"; };
-		9B63822715E4735500456187 /* PhotoViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoViewDataSource.h; sourceTree = "<group>"; };
-		9B63822815E4735500456187 /* PhotoViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoViewDataSource.m; sourceTree = "<group>"; };
 		9B6BF0B415E19ACD002834C5 /* CellScope.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CellScope.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B6BF0B815E19ACD002834C5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9B6BF0BA15E19ACD002834C5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -195,6 +194,9 @@
 		9B9EEEEF15E2D4B200773E9D /* CSUserContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSUserContext.m; sourceTree = "<group>"; };
 		9B9EEEF415E2DB8900773E9D /* Pictures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pictures.h; sourceTree = "<group>"; };
 		9B9EEEF515E2DB8900773E9D /* Pictures.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pictures.m; sourceTree = "<group>"; };
+		9BE8B3DC15E52D55009B95F5 /* PhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoViewController.h; sourceTree = "<group>"; };
+		9BE8B3DD15E52D55009B95F5 /* PhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoViewController.m; sourceTree = "<group>"; };
+		9BE8B3DF15E52F29009B95F5 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		9BF8133C15E1AB0700AC9B3F /* PictureListMainTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PictureListMainTable.h; sourceTree = "<group>"; };
 		9BF8133D15E1AB0700AC9B3F /* PictureListMainTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PictureListMainTable.m; sourceTree = "<group>"; };
 		9BF8134015E1B13500AC9B3F /* PictureListDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PictureListDetail.h; sourceTree = "<group>"; };
@@ -206,6 +208,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BE8B3E015E52F29009B95F5 /* AssetsLibrary.framework in Frameworks */,
 				9B13455615E28E14009863DF /* ImageIO.framework in Frameworks */,
 				9B9109C015E1FD610067BB8D /* CoreImage.framework in Frameworks */,
 				9B9109C415E1FDA90067BB8D /* CoreVideo.framework in Frameworks */,
@@ -333,6 +336,7 @@
 		9B6BF0A915E19ACD002834C5 = {
 			isa = PBXGroup;
 			children = (
+				9BE8B3DF15E52F29009B95F5 /* AssetsLibrary.framework */,
 				9B63818715E4709A00456187 /* Nimbus */,
 				9B9109B015E1F6D40067BB8D /* UIImage-categories */,
 				9B9109A815E1F3D00067BB8D /* Images */,
@@ -386,8 +390,8 @@
 				9B9109BB15E1FA2A0067BB8D /* CaptureViewController.m */,
 				9B9EEEEE15E2D4B200773E9D /* CSUserContext.h */,
 				9B9EEEEF15E2D4B200773E9D /* CSUserContext.m */,
-				9B63822715E4735500456187 /* PhotoViewDataSource.h */,
-				9B63822815E4735500456187 /* PhotoViewDataSource.m */,
+				9BE8B3DC15E52D55009B95F5 /* PhotoViewController.h */,
+				9BE8B3DD15E52D55009B95F5 /* PhotoViewController.m */,
 			);
 			path = CellScope;
 			sourceTree = "<group>";
@@ -619,7 +623,7 @@
 				9B63821815E4710000456187 /* NIToolbarPhotoViewController.m in Sources */,
 				9B63822315E4712300456187 /* NIPageView.m in Sources */,
 				9B63822415E4712300456187 /* NIPagingScrollView.m in Sources */,
-				9B63822915E4735500456187 /* PhotoViewDataSource.m in Sources */,
+				9BE8B3DE15E52D55009B95F5 /* PhotoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
